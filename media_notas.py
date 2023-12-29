@@ -1,5 +1,6 @@
+notas = [7.5, 8.0, 9.5, 6.0, 8.5]
 soma = 0
-for i in range(8):
-    soma += float(input("Digite a nota: "))
-    media = soma / 8
-print(f"A média das suas notas é {media:.1f}")
+for nota in notas:
+    soma += nota
+media = soma / len(notas)
+print(media)
